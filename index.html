@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Tracker</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-[#F8FAFC]">
     <header class="w-[80%] mx-auto">
@@ -40,10 +41,56 @@
     </div>
     </main>
 
-    <section class="w-[80%] mx-auto">
-        <button>All</button>
-        <button>Interview</button>
-        <button>Rejected</button>
+    <section class="w-[80%] mx-auto space-x-5">
+        <button class="bg-blue-600 text-white px-6 py-2 rounded">All</button>
+        <button class="bg-white text-gray-600 px-6 py-2 rounded">Interview</button>
+        <button class="bg-white text-gray-600 px-6 py-2 rounded">Rejected</button>
+    </section>
+
+    <section class="pt-6">
+        <!--card1-->
+        <div class="card  w-[80%] mx-auto p-8 gap-2 flex justify-between bg-white rounded">
+            <!--main part 1-->
+           <div class="">
+
+            <!--part 1-->
+            <div class="pt-2">
+                <p class="mobile-first text-2xl font-semibold">Mobile First Corp</p>
+                <p class="react-native text-gray-600">React Native Developer</p>
+            </div>
+          <!--part 2-->
+            <div class="pt-5 text-gray-600 ">
+                <p>Remote
+                    • 
+                   Full-time 
+                   •
+                    $130,000 - $175,000</p>
+            </div>
+
+            <!--part 3-->
+            <div class="flex pt-8"  >
+            <p class="light bg-[#F8FAFC] py-3 px-2">Not Applied</p>
+            
+            </div>
+
+            <!--part 4-->
+            <div class="pt-7">
+                <p class="status text-gray-800">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                
+            </div>
+
+            <!--part 5-->
+            <div class="pt-4 space-x-5">
+                <button class="thriving-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
+                <button class="struggling-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
+            </div>
+           </div> 
+           <!--main part 2-->
+            <div>
+                <button class="rounded-full"><i class="fa-regular fa-trash-can"></i></button> 
+            </div>
+        </div>
+
     </section>
 </body>
 </html>
