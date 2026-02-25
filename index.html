@@ -35,17 +35,27 @@
         <div class="flex justify-between ">
         <h1 class="font-bold">Available Jobs</h1>
         <div class="flex">
-            <p class="text-gray-600">0</p>
+            <p class="count text-gray-600">0</p>
             <p class="text-gray-600">jobs</p>
         </div>
     </div>
     </main>
 
     <section class="w-[80%] mx-auto space-x-5">
-        <button onclick="toggleStyle('btn-all')" id="btn-all" class="bg-blue-600 text-white px-6 py-2 rounded">All</button>
-        <button onclick="toggleStyle('btn-interview')" id="btn-interview" class="bg-white text-gray-600 px-6 py-2 rounded">Interview</button>
-        <button onclick="toggleStyle('btn-reject')" id="btn-reject" class="bg-white text-gray-600 px-6 py-2 rounded">Rejected</button>
+        <button onclick="toggleStyle('btn-all')" id="btn-all" class="all-filter-btn bg-blue-600 text-white px-6 py-2 rounded">All</button>
+        <button onclick="toggleStyle('btn-interview')" id="btn-interview" class="interview-filter-btn bg-white text-gray-600 px-6 py-2 rounded">Interview</button>
+        <button onclick="toggleStyle('btn-reject')" id="btn-reject" class="reject-filter-btn bg-white text-gray-600 px-6 py-2 rounded">Rejected</button>
     </section>
+
+    
+        
+        <div id="png" class="flex flex-col items-center justify-center text-center w-[80%] mx-auto  hidden">
+        <img src="jobs.png" alt="">
+         <p >No jobs available</p>
+        <p class="text-gray-500">Check back soon for new job opportunities</p>
+    </div>
+
+    
 
     <section id="all-cards" class="pt-6">
         <!--card1-->
@@ -69,7 +79,7 @@
 
             <!--part 3-->
             <div class="flex pt-8"  >
-            <p id="not-applied" class=" bg-[#F8FAFC] py-3 px-2">Not Applied</p>
+            <p id="" class="not-applied bg-[#F8FAFC] py-3 px-2">Not Applied</p>
             
             </div>
 
@@ -81,8 +91,8 @@
 
             <!--part 5-->
             <div class="pt-4 space-x-5">
-                <button id="INTERVIEW-btn" class=" text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
-                <button id="REJECTED-btn" class=" text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
+                <button id="" class="INTERVIEW-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
+                <button id="" class="REJECTED-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
             </div>
            </div> 
            <!--main part 2-->
@@ -124,8 +134,8 @@
 
             <!--part 5-->
             <div class="pt-4 space-x-5">
-                <button class="interview-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
-                <button class="rejected-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
+                <button class="INTERVIEW-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
+                <button class="REJECTED-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
             </div>
            </div> 
            <!--main part 2-->
@@ -169,8 +179,8 @@
 
             <!--part 5-->
             <div class="pt-4 space-x-5">
-                <button class="interview-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
-                <button class="rejected-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
+                <button class="INTERVIEW-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
+                <button class="REJECTED-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
             </div>
            </div> 
            <!--main part 2-->
@@ -213,8 +223,8 @@
 
             <!--part 5-->
             <div class="pt-4 space-x-5">
-                <button class="interview-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
-                <button class="rejected-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
+                <button class="INTERVIEW-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
+                <button class="REJECTED-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
             </div>
            </div> 
            <!--main part 2-->
@@ -257,8 +267,8 @@
 
             <!--part 5-->
             <div class="pt-4 space-x-5">
-                <button class="interview-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
-                <button class="rejected-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
+                <button class="INTERVIEW-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
+                <button class="REJECTED-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
             </div>
            </div> 
            <!--main part 2-->
@@ -301,8 +311,8 @@
 
             <!--part 5-->
             <div class="pt-4 space-x-5">
-                <button class="interview-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
-                <button class="rejected-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
+                <button class="INTERVIEW-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
+                <button class="REJECTED-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
             </div>
            </div> 
            <!--main part 2-->
@@ -345,8 +355,8 @@
 
             <!--part 5-->
             <div class="pt-4 space-x-5">
-                <button class="interview-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
-                <button class="rejected-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
+                <button class="INTERVIEW-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
+                <button class="REJECTED-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
             </div>
            </div> 
            <!--main part 2-->
@@ -389,8 +399,8 @@
 
             <!--part 5-->
             <div class="pt-4 space-x-5">
-                <button class="interview-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
-                <button class="rejected-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
+                <button class="INTERVIEW-btn text-green-800 p-2 border-2 border-green-800 font-semibold rounded">INTERVIEW</button>
+                <button class="REJECTED-btn text-red-800 p-2 border-2 border-red-800 font-semibold rounded">REJECTED</button>
             </div>
            </div> 
            <!--main part 2-->
