@@ -88,6 +88,25 @@ document.addEventListener('click', function(e){
            png.classList.add('hidden');
             }        
 })
+
+const totalCount = document.getElementById('total-count');
+function calculate(){
+  totalCount.innerText = allCards.parentNode.children.length;
+}
+calculate();
+
+
+document.addEventListener('click', function(e){
+  if(e.target.classList.contains('interview-filter-btn')){
+    const card =  e.target.closest('.card');
+      const notApplied = card.querySelector('.not-applied');
+
+        notApplied.innerText = btnInterview.innerText;
+
+       notApplied.classList.remove('bg-[#F8FAFC]', 'py-3', 'px-2');
+       notApplied.classList.add('text-green-800', 'border-2', 'border-green-800' );
+  }
+})
         
 
 
