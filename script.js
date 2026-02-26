@@ -26,6 +26,7 @@ const notApplied = document.querySelector('.not-applied');
 const card = document.querySelector('.card');
 const interviewCount = document.getElementById('interview-count');
 const rejectCount = document.getElementById('rejected-count');
+const selectedCard = document.getElementById('selected-card');
  document.addEventListener('click', function(e){
     if(e.target.classList.contains('INTERVIEW-btn')){
       const card =  e.target.closest('.card');
@@ -43,12 +44,14 @@ const rejectCount = document.getElementById('rejected-count');
       
       e.target.disabled = true;
       
+     selectedCard.innerHTML = card.outerHTML; 
+      selectedCard.classList.remove('hidden');
+      png.classList.add('hidden');
+      card.classList.add('hidden');
+
       
-     
 
-    }
-
-    
+  }
 
        
    if(e.target.classList.contains('REJECTED-btn')){
@@ -65,9 +68,12 @@ const rejectCount = document.getElementById('rejected-count');
       rejectCount.innerText++;
       e.target.disabled = true;
 
+      selectedCard.innerHTML = card.outerHTML; 
+      selectedCard.classList.remove('hidden');
+      png.classList.add('hidden');
+      card.classList.add('hidden');
 
-         //  console.log(event);
-
+     
     }  
     
 })
@@ -79,7 +85,7 @@ document.addEventListener('click', function(e){
     if(e.target.classList.contains('interview-filter-btn')){
     allCards.classList.add('hidden');
    png.classList.remove('hidden');
-
+   
   
     }
 
@@ -117,3 +123,5 @@ document.getElementById('all-cards').addEventListener('click', function(e){
        countJ.innerText--;
     }
 })
+
+
