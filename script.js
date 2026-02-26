@@ -26,7 +26,7 @@ const notApplied = document.querySelector('.not-applied');
 const card = document.querySelector('.card');
 const interviewCount = document.getElementById('interview-count');
 const rejectCount = document.getElementById('rejected-count');
-document.addEventListener('click', function(e){
+ document.addEventListener('click', function(e){
     if(e.target.classList.contains('INTERVIEW-btn')){
       const card =  e.target.closest('.card');
       const notApplied = card.querySelector('.not-applied');
@@ -39,12 +39,16 @@ document.addEventListener('click', function(e){
             notApplied.classList.add('text-green-800', 'border-2', 'border-green-800' );
 
       interviewCount.innerText++;
+      countJ.innerText--;
+      
       e.target.disabled = true;
-
-
-         //  console.log(event);
+      
+      
+     
 
     }
+
+    
 
        
    if(e.target.classList.contains('REJECTED-btn')){
@@ -75,6 +79,8 @@ document.addEventListener('click', function(e){
     if(e.target.classList.contains('interview-filter-btn')){
     allCards.classList.add('hidden');
    png.classList.remove('hidden');
+
+  
     }
 
     if(e.target.classList.contains('reject-filter-btn')){
@@ -90,24 +96,24 @@ document.addEventListener('click', function(e){
 })
 
 const totalCount = document.getElementById('total-count');
+
+const countJ = document.getElementById('count');
+
 function calculate(){
   totalCount.innerText = allCards.parentNode.children.length;
+   countJ.innerText = allCards.parentNode.children.length;
+  
 }
 calculate();
 
+const deleteBtn = document.querySelector('.btn-delete');
 
-document.addEventListener('click', function(e){
-  if(e.target.classList.contains('interview-filter-btn')){
-    const card =  e.target.closest('.card');
-      const notApplied = card.querySelector('.not-applied');
 
-        notApplied.innerText = btnInterview.innerText;
+document.getElementById('all-cards').addEventListener('click', function(e){
 
-       notApplied.classList.remove('bg-[#F8FAFC]', 'py-3', 'px-2');
-       notApplied.classList.add('text-green-800', 'border-2', 'border-green-800' );
-  }
+       console.log(e.target);
+    if(e.target.classList.contains('btn-delete')){
+       e.target.closest('.card').remove();
+       countJ.innerText--;
+    }
 })
-        
-
-
-
