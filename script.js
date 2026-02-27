@@ -31,7 +31,7 @@ const selectedCard = document.getElementById('selected-card');
     if(e.target.classList.contains('INTERVIEW-btn')){
       const card =  e.target.closest('.card');
       const notApplied = card.querySelector('.not-applied');
-
+        notApplied.style.display = "block";
         notApplied.innerText = btnInterview.innerText;
 
        notApplied.classList.remove('bg-[#F8FAFC]', 'py-3', 'px-2');
@@ -43,15 +43,11 @@ const selectedCard = document.getElementById('selected-card');
       countJ.innerText--;
       
       e.target.disabled = true;
+      selectedCard.appendChild(card);
       
-     selectedCard.innerHTML = card.outerHTML; 
-      selectedCard.classList.remove('hidden');
-      png.classList.add('hidden');
-      card.classList.add('hidden');
-
-      
-
-  }
+      png.style.display = "none";
+    
+ }
 
        
    if(e.target.classList.contains('REJECTED-btn')){
@@ -59,7 +55,7 @@ const selectedCard = document.getElementById('selected-card');
       const notApplied = card.querySelector('.not-applied');
 
         notApplied.innerText = btnRejected.innerText;
-
+        notApplied.style.display = "block";
        notApplied.classList.remove('bg-[#F8FAFC]', 'py-3', 'px-2');
             
         
@@ -68,13 +64,13 @@ const selectedCard = document.getElementById('selected-card');
       rejectCount.innerText++;
       e.target.disabled = true;
 
-      selectedCard.innerHTML = card.outerHTML; 
-      selectedCard.classList.remove('hidden');
-      png.classList.add('hidden');
-      card.classList.add('hidden');
 
-     
-    }  
+      png.style.display = "none";
+
+      selectedCard.appendChild(card);
+      
+      
+ }  
     
 })
 
