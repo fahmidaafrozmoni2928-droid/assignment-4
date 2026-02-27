@@ -27,8 +27,10 @@ const card = document.querySelector('.card');
 const interviewCount = document.getElementById('interview-count');
 const rejectCount = document.getElementById('rejected-count');
 const selectedCard = document.getElementById('selected-card');
+let Counts = 0;
  document.addEventListener('click', function(e){
     if(e.target.classList.contains('INTERVIEW-btn')){
+      
       const card =  e.target.closest('.card');
       const notApplied = card.querySelector('.not-applied');
         notApplied.style.display = "block";
@@ -39,13 +41,25 @@ const selectedCard = document.getElementById('selected-card');
         
             notApplied.classList.add('text-green-800', 'border-2', 'border-green-800' );
 
-      interviewCount.innerText++;
-      countJ.innerText--;
+      
+      interviewCount.innerText++
+      
+     // countJ.innerText--;
       
       e.target.disabled = true;
       selectedCard.appendChild(card);
       
       png.style.display = "none";
+
+     if(!card.classList.contains('interviewed')){
+      Counts++;
+      card.classList.add('interviewed');
+     }
+     // Counts++;
+     let totalJobs = 8;
+     countJ.innerText = Counts + "of" + totalJobs ;
+     
+
     
  }
 
@@ -102,8 +116,9 @@ const totalCount = document.getElementById('total-count');
 const countJ = document.getElementById('count');
 
 function calculate(){
-  totalCount.innerText = allCards.parentNode.children.length;
-   countJ.innerText = allCards.parentNode.children.length;
+   const allCards = document.querySelectorAll('.card:not(.empty-card)');
+  totalCount.innerText = allCards.length;
+   countJ.innerText = allCards.length;
   
 }
 calculate();
