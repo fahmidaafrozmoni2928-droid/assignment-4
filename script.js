@@ -132,6 +132,8 @@ document.getElementById('all-cards').addEventListener('click', function(e){
     if(e.target.classList.contains('btn-delete')){
        e.target.closest('.card').remove();
        countJ.innerText--;
+       totalCount.innerText--;
+       
     }
 })
 
