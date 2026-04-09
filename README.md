@@ -7,9 +7,7 @@ This project is a  developed as part of my learning journey. The primary goal wa
 You can view the live project here:  
 https://fahmidaafrozmoni2928-droid.github.io/assignment-4/
 
-### 📸 Screenshots
-  
-![Project Screenshot](link-to-your-image.png)
+
 
 ### 🛠️ Technology Stack
 The following technologies were used to build this project:
