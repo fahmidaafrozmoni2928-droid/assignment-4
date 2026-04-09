@@ -1,14 +1,14 @@
-# Assignment 4 - [Insert Project Name Here]
+# Assignment 4 - Job Application Tracker
 
 ### ℹ️ Project Overview
-This project is a [brief 1-sentence description, e.g., "responsive landing page" or "interactive web app"] developed as part of my learning journey. The primary goal was to implement [mention a key concept, e.g., DOM manipulation or responsive design] effectively.
+This project is a  developed as part of my learning journey. The primary goal was to implement [mention a key concept, e.g., DOM manipulation or responsive design] effectively.
 
 ### 🚀 Live Link
 You can view the live project here:  
 **[Live Demo](https://github.io)**
 
 ### 📸 Screenshots
-*(Add a high-quality screenshot of your project here to make it visually appealing)*  
+  
 ![Project Screenshot](link-to-your-image.png)
 
 ### 🛠️ Technology Stack
@@ -20,7 +20,7 @@ The following technologies were used to build this project:
 
 ### ✨ Key Features
 - **Responsive Design:** Optimized for mobile, tablet, and desktop screens.
-- **Interactive UI:** Smooth user experience with [mention a specific feature].
+
 - **Clean Code:** Followed best practices for maintainable and readable code.
 
 ### 💻 How to Run Locally
@@ -30,7 +30,5 @@ To run this project on your local machine:
 2. Navigate to the project folder.
 3. Open the `index.html` file in any modern web browser.
 
-### 🔗 Related Links
-- [Original Assignment Requirements](link-if-applicable)
-- [Video Demo/Presentation](link-if-applicable)
+
 
