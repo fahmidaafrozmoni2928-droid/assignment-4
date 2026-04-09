@@ -5,7 +5,7 @@ This project is a  developed as part of my learning journey. The primary goal wa
 
 ### 🚀 Live Link
 You can view the live project here:  
-**[Live Demo](https://github.io)**
+https://fahmidaafrozmoni2928-droid.github.io/assignment-4/
 
 ### 📸 Screenshots
   
