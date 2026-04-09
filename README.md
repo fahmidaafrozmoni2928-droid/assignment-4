@@ -1,10 +1,36 @@
-1. The difference between getElementById and getElementsByClassName is getElementById select a single element and must be a unique id and getElementsByClassName select multiple elements.
-The defference between querySelector and querySelectorAll is querySelector select firt element and querySelectorAll select all matching element and both are use CSS selector Id and Class.
+# Assignment 4 - [Insert Project Name Here]
 
-2. A new element create by 'createElement' and will insert by 'appendChild'.
+### ℹ️ Project Overview
+This project is a [brief 1-sentence description, e.g., "responsive landing page" or "interactive web app"] developed as part of my learning journey. The primary goal was to implement [mention a key concept, e.g., DOM manipulation or responsive design] effectively.
 
-3. Event Bubbling means when an event occurs on child element then this event up to the parent element in the opposite dirrection.
+### 🚀 Live Link
+You can view the live project here:  
+**[Live Demo](https://github.io)**
 
-4 Event Delegation means add addEventListener to the parent element can handle all the child element.And it is useful because at once can be handle all the child element.
+### 📸 Screenshots
+*(Add a high-quality screenshot of your project here to make it visually appealing)*  
+![Project Screenshot](link-to-your-image.png)
 
-5. stopPropagation can stop the event bubbling and preventDefault stops browser default behavior.
+### 🛠️ Technology Stack
+The following technologies were used to build this project:
+* **HTML5:** For structured semantic markup.
+* **CSS3:** For styling and responsive layouts (Flexbox/Grid).
+* **JavaScript (ES6):** For functional logic and interactivity.
+* [Add others if applicable, e.g., Tailwind CSS, Bootstrap, or FontAwesome]
+
+### ✨ Key Features
+- **Responsive Design:** Optimized for mobile, tablet, and desktop screens.
+- **Interactive UI:** Smooth user experience with [mention a specific feature].
+- **Clean Code:** Followed best practices for maintainable and readable code.
+
+### 💻 How to Run Locally
+To run this project on your local machine:
+1. Clone the repository:  
+   `git clone https://github.com`
+2. Navigate to the project folder.
+3. Open the `index.html` file in any modern web browser.
+
+### 🔗 Related Links
+- [Original Assignment Requirements](link-if-applicable)
+- [Video Demo/Presentation](link-if-applicable)
+
